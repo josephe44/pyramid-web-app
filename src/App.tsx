@@ -72,9 +72,9 @@ function App() {
 
         {/* Right */}
         <Grid.Col md={6} pr={40} pl={40}>
-          <Paper pt={20}>
+          <Paper pt={10}>
             {/* Logo */}
-            <Group mb={40}>
+            <Group mb={20}>
               <Image
                 src={Logo}
                 height={70}
@@ -148,7 +148,7 @@ function App() {
 
             {/* Checkbox */}
             <Checkbox label="Keep me logged in" mt="md" size="sm" />
-            <Group mt="md" className="flex_gap">
+            <Group mt={5} className="flex_gap">
               <Checkbox label="I agree to all the" size="sm" />
               <Anchor component="button" size="sm">
                 Terms
@@ -196,18 +196,20 @@ function App() {
               </Anchor>
             </Text>
 
-            <Group mt={30}>
+            <Group mt={10}>
               <Image
+                className="pay_acc"
                 src={GooglePag}
-                height={60}
+                height={50}
                 width={200}
                 radius={10}
                 withPlaceholder
                 placeholder="GooglePay"
               />
               <Image
+                className="pay_acc"
                 src={ApplePag}
-                height={60}
+                height={50}
                 width={200}
                 radius={10}
                 withPlaceholder
