@@ -1,13 +1,79 @@
-body {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.mantine-Grid-root {
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+  height: 100vh;
+}
+
+.mantine-InputWrapper-root label {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.flex_gap {
+  display: flex;
+  gap: 4px;
+}
+
+span {
+  font-size: 14px;
+}
+.image_left {
+  position: relative;
+}
+
+.left_header_text {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0 140px;
+  color: #fff;
+  margin-top: 40px;
+}
+
+.image_text {
+  position: absolute;
+  left: 25%;
+  top: 40px;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  width: 420px;
+}
+
+.grid_left {
+  background: linear-gradient(324.93deg, #007aff 0.74%, #0f70da 100%);
+  height: 100vh;
+}
+
+/* media query for max of 995px  */
+@media screen and (max-width: 990px) {
+  .grid_left {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .image_text {
+    left: 20%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .left_header_text {
+    margin: 0 40px;
+    margin-top: 40px;
+  }
 }
